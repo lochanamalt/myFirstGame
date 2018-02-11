@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+header{
+    display: inline-block;
+    float: left;
+    position: relative;
+    width: 80%;
+    height:100px;
+    background: url("../img/city.jpg");
+    background-color: rgba(2,2,6,0.76);
+
+}
+#mobile{
+    display: inline-block;
+    position: relative;
+    float: left;
+    width: 20%;
+    height:100px;
+    background-color: rgba(2,2,6,0.76);
+
+}
+#content{
+    display: inline-block;
+    position: relative;
+    width:100%;
+    height:535px;
+    top:0px;
+    background-color: rgba(2,2,6,0.76);
+
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.mobile,.mobile2{
+
+    width :auto;
+    height: 100px;
+}
+.mobile2{
+    visibility: hidden;
+}
+.bat{
+    position: absolute;
+    display : inline-block;
+    width: 80px;
+    height: auto;
+    bottom : 0;
+}
+.joker{
+    display: inline-block;
+    width: 60px;
+    height: auto;
+    position: relative;
+    right:0;
+}
+
+#score{
+    position: absolute;
+    left:40%;
+    font-family: Jokerman;
+    font-size: 50px;
+}
