@@ -20,22 +20,22 @@ $(window).keydown(function (ev) {
         var leftNum = parseInt(left.substring(0, (left.length - 2)));
         if(leftNum<1080){
             if(topNum!=0){
-                $(".bat").css("top", topNum - 5);
+                $(".bat").css("top", topNum - 7);
             }
         }else{
-            $(".bat").css("top", topNum - 5);
+            $(".bat").css("top", topNum - 7);
         }
     }else if(ev.which === 40){
         var top = $(".bat").css("top");
         var topNum = parseInt(top.substring(0, (top.length - 2)));
         if(topNum!=475){
-            $(".bat").css("top", topNum + 5);
+            $(".bat").css("top", topNum + 7);
         }
     }else if(ev.which === 39){
         var left = $(".bat").css("left");
         var leftNum = parseInt(left.substring(0, (left.length - 2)));
         if(leftNum!=1250){
-            $(".bat").css("left", leftNum + 5);
+            $(".bat").css("left", leftNum + 7);
         }
     }else if(ev.which === 37) {
         var left = $(".bat").css("left");
@@ -46,9 +46,9 @@ $(window).keydown(function (ev) {
         console.log(topNum);
         if (leftNum != 0) {
             if (topNum < 0 && leftNum > 1080) {
-                $(".bat").css("left", leftNum - 5);
+                $(".bat").css("left", leftNum - 7);
             } else if (topNum >= 0) {
-                $(".bat").css("left", leftNum - 5);
+                $(".bat").css("left", leftNum - 7);
 
             }
         }
@@ -180,7 +180,7 @@ function batrang(){
     $('#content').children().first().children().last().children().first().animate({
         left :"100%"
 
-    },5000,'linear');
+    },5000/(leftNum+10),'linear');
 
     var ar=  $('#content').children().first().children().last().children().first();
     batrangs.push(ar);
