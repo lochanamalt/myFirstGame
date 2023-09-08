@@ -8,17 +8,16 @@
         <link rel="stylesheet" href="css/jquery-ui.min.css">
     </head>
     <body>
-    <header>
-            <div class="row">
-                <label id="score" class="col-md-12">Score :0</label>
+    <div class="header">
+            <div class="city-background" id="score">Score :0
             </div>
-
-    </header>
-    <div id="mobile">
-        <img class="mobile" align="right" src="img/batmobile.png">
-        <img class="mobile2" align="right" src="img/ontheway.png">
-
+            <div id="mobile">
+                <img class="mobile" align="right" src="img/batmobile.png">
+                <img class="mobile2" align="right" src="img/ontheway.png">
+        
+            </div>
     </div>
+    
     <div id="content">
        <div>
            <div>
@@ -27,9 +26,13 @@
        </div>
     </div>
 
+    <iframe src="audio/dark_knight_theme.mp3" allow="autoplay" id="audio" style="display: none;" ></iframe>
+    <audio id="background" autoplay loop>
+        <source src="audio/dark_knight_theme.mp3" type="audio/mp3">
+    </audio>
 
+ 
     <audio src="audio/batarang.mp3" class="batarang" preload="none" id="batarang" volume="0.8"></audio>
-    <audio src="audio/Batman%20The%20Dark%20Knight%20Theme%20-%20Hans%20Zimmer.mp3" autoplay loop="true" volume="0.5" id="background"></audio>
     <audio src="audio/attack.mp3" id="attack" preload="none" volume="0.8"></audio>
     <audio src="audio/Ta%20Da-SoundBible.com-1884170640.mp3" id="tada" preload="none" volume="0.8"></audio>
 
